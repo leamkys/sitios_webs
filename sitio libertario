@@ -1,0 +1,126 @@
+<html><head><base href="https://libertarianbank.com">
+    <meta charset="UTF-8">
+    <title>LibertarianBank - Banca Libertaria Moderna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f6f8f9 0%, #e5ebee 100%);
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(45deg, #4a5568, #2d3748);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .bank-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .bank-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div id="app" class="min-h-screen">
+        <!-- Navegación -->
+        <nav class="bg-white shadow-md p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <span class="ml-2 text-2xl font-bold text-gray-800">LibertarianBank</span>
+                </div>
+                <div class="space-x-4">
+                    <a href="https://libertarianbank.com/login" class="text-gray-700 hover:text-blue-600">Iniciar Sesión</a>
+                    <a href="https://libertarianbank.com/registro" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">Registro</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero-bg text-white py-20">
+            <div class="container mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-6">Tu Libertad Financiera, Nuestra Misión</h1>
+                <p class="text-xl mb-10">Banca moderna, transparente y centrada en el individuo</p>
+                <div class="space-x-4">
+                    <a href="https://libertarianbank.com/abrir-cuenta" class="bg-green-500 px-6 py-3 rounded-full hover:bg-green-600">Abrir Cuenta</a>
+                    <a href="https://libertarianbank.com/servicios" class="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-gray-800">Nuestros Servicios</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Características -->
+        <section class="container mx-auto py-16">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bank-card bg-white p-6 rounded-lg shadow-md text-center">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Transparencia Total</h3>
+                    <p>Operaciones financieras claras y sin letra pequeña</p>
+                </div>
+                <div class="bank-card bg-white p-6 rounded-lg shadow-md text-center">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Seguridad Avanzada</h3>
+                    <p>Protección de última generación para tus activos</p>
+                </div>
+                <div class="bank-card bg-white p-6 rounded-lg shadow-md text-center">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Libertad Financiera</h3>
+                    <p>Gestión autónoma de tus recursos sin intermediarios</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="container mx-auto grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="font-bold mb-4">LibertarianBank</h4>
+                    <p>Revolucionando la banca con principios libertarios</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Servicios</h4>
+                    <ul>
+                        <li><a href="https://libertarianbank.com/cuentas" class="hover:text-blue-400">Cuentas</a></li>
+                        <li><a href="https://libertarianbank.com/inversiones" class="hover:text-blue-400">Inversiones</a></li>
+                        <li><a href="https://libertarianbank.com/creditos" class="hover:text-blue-400">Créditos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <ul>
+                        <li><a href="https://libertarianbank.com/privacidad" class="hover:text-blue-400">Política de Privacidad</a></li>
+                        <li><a href="https://libertarianbank.com/terminos" class="hover:text-blue-400">Términos de Servicio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contacto</h4>
+                    <p>Email: soporte@libertarianbank.com</p>
+                    <p>Teléfono: +1 (555) LIBERTY</p>
+                </div>
+            </div>
+            <div class="text-center mt-8 border-t border-gray-700 pt-4">
+                © 2024 LibertarianBank. Todos los derechos reservados.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                bankName: 'LibertarianBank'
+            }
+        });
+    </script>
+</body>
+</html>
